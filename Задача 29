@@ -1,0 +1,13 @@
+// Напишите программу, которая задаёт массив из 8 целых чисел с клавиатуры и далее выводит массив на экран в одну строку.
+Console.Write("[");
+int [] numbers = new int[8];
+for (int i = 0; i < numbers.Length; i++)
+ {
+    numbers [i] = new Random().Next(0, 11);
+    Console.Write(" " + Function (i) + " ");
+ }
+Console.Write("]");
+int Function (int a)
+{
+    return numbers[a];
+}
